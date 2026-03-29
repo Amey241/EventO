@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_privates"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/privatebackgr"
+    tools:context="com.example.evento.Privates">
+
+    <LinearLayout
+        android:layout_width="357dp"
+        android:layout_height="108dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/passkey"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_button"
+            android:elevation="16dp"
+            android:fontFamily="@font/baskervville"
+            android:hint="Enter passcode:"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="19dp"
+            android:inputType="numberPassword|number"
+            android:paddingLeft="30dp"
+            android:textColor="@color/bloodred" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="19dp"
+            android:background="@drawable/rounded_button"
+            android:elevation="16dp"
+            android:text="Submit" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/baskervville"
+        android:text="Private Event Password"
+        android:textColor="#283618"
+        android:textSize="31.3dp"
+        android:textStyle="bold" />
+</RelativeLayout>

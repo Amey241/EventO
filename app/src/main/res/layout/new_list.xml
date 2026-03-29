@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="189dp"
+    android:layout_height="189dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginLeft="5dp"
+    android:backgroundTint="@color/bloodred"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:text="pra"
+            android:visibility="gone"
+            android:textColor="#FFF0F3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="sss"
+            android:textColor="#CACDC7"
+            android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/thumbnail_image_card"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="Image"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/eventimg"
+                android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/type"
+            android:padding="5dp"
+            style="@style/AuthorTextViewStyle"
+            android:text="pra"
+            android:textColor="#D3DACC"
+            android:textStyle="bold" />
+
+        <!-- Add your additional views here if needed -->
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

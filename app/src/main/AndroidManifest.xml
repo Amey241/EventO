@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.evento">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- Add permission for internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".FeedbackActivity" />
+
+        <activity
+            android:name=".AboutUs"
+            android:launchMode="singleTop"
+            android:exported="false" />
+        <activity
+            android:name=".ShowVendorList"
+            android:launchMode="singleTop"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:launchMode="singleTop"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTop"
+            android:label="@string/login" />
+        <activity
+            android:name=".Register"
+            android:launchMode="singleTop"
+            android:label="@string/register" />
+        <activity
+            android:name=".CreateEvent"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Delete"
+            android:launchMode="singleTop"
+            android:label="Delete Event" />
+        <activity
+            android:name=".ShowEventList"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Publics"
+            android:launchMode="singleTop"
+            android:label="Public Event" />
+        <activity
+            android:name=".Privates"
+            android:launchMode="singleTop"
+            android:label="Private Event" />
+        <activity
+            android:name=".ShowEvents"
+            android:launchMode="singleTop" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8EDEB">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+
+        <ImageView
+            android:layout_width="248dp"
+            android:layout_height="88dp"
+            android:layout_marginLeft="90dp"
+            android:src="@drawable/splashimage" />
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="317dp"
+            android:layout_height="493dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="50dp"
+            android:background="#FCD5CE"
+            android:elevation="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/helvetica_bold"
+                android:text="Welcome OnBoard!"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/fname"
+                android:layout_width="294dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/rounded_button"
+                android:elevation="16dp"
+                android:fontFamily="@font/helvetica_regular"
+                android:hint="Enter your full name"
+                android:textColor="@color/black"
+                android:textColorHint="#80000000" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="294dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/rounded_button"
+                android:elevation="16dp"
+                android:fontFamily="@font/helvetica_regular"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/transparent" />
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="294dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/rounded_button"
+                android:elevation="16dp"
+                android:fontFamily="@font/helvetica_regular"
+                android:hint="Enter your Password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/transparent" />
+
+            <EditText
+                android:id="@+id/mob_no"
+                android:layout_width="294dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/rounded_button"
+                android:elevation="16dp"
+                android:fontFamily="@font/helvetica_regular"
+                android:hint="Enter your Mobile Number"
+                android:inputType="phone"
+                android:textColorHint="@color/transparent" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l1"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="54dp"
+            android:background="#FCD5CE"
+            android:fontFamily="@font/corben"
+            android:text="Register Now"
+            android:elevation="16dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressBarLoading"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/register_btn"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</ScrollView>
+
